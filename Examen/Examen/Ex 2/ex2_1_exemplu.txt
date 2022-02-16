@@ -1,0 +1,54 @@
+# Echipa: Ignat Eduardo, Neagu Marian-Madalin
+# Acest fisier de configurare este suplimentar pentru a testa ex 2_1
+#
+States:
+    q0
+    q1
+    q2
+    q3
+    q_accept
+    q_reject
+End
+
+#
+#
+#
+
+Input alphabet:
+    0
+End
+
+#
+
+Tape alphabet:
+    0
+    x
+    _
+End
+
+#
+
+Transitions:
+    q0 q0 0 x R 0 x L
+    q0 q1 x x N 0 x L
+    q0 q2 0 x R x x N
+    q0 q_accept x _ N x _ N
+
+    q1 q1 x x N 0 x L
+    q1 q1 x x N x x N
+
+    q2 q2 0 x R x x N
+    q2 q2 x x N x x N
+End
+
+Start state:
+    q0
+End
+
+Accept state:
+    q_accept
+End
+
+Reject state:
+    q_reject
+End

@@ -1,0 +1,1 @@
+Se da un AFD intr-un fisier de config ca la celelalte proiecte. Se cere sa se genereze AFD-ul minimal (folosind Myhill Nerode sau orice altceva)
